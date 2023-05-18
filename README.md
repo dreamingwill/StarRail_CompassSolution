@@ -7,7 +7,7 @@
 
 用法：
 
- <img src="https://github.com/dreamingwill/StarRail_CompassSolution/blob/main/%E7%BB%98%E5%9B%BE1.jpg" alt="compass" width="300"/>
+ <img src="https://github.com/dreamingwill/StarRail_CompassSolution/blob/main/compass.jpg" alt="compass" width="300"/>
  
 如图，需要起点到终点的距离，转动角度（注意：逆时针转240°=顺时针转120°），罗盘控制情况。
 
@@ -17,9 +17,9 @@
 
 0 1 1
 
-1 0 1
-
 1 1 0
+
+1 0 1
 
 4 1 4
 
@@ -29,9 +29,9 @@
 
 x1 = 3  (内中外)对应控制: 0 1 1
 
-x2 = 2  (内中外)对应控制: 1 0 1
+x2 = 0  (内中外)对应控制: 1 1 0
 
-x3 = 0  (内中外)对应控制: 1 1 0
+x3 = 2  (内中外)对应控制: 1 0 1
 
 
 解法：
@@ -45,9 +45,9 @@ $$ \begin{pmatrix}
 \end{pmatrix}
 \begin{pmatrix}
 0&1&1\\
-1&0&1\\
 1&1&0\\
-\end{pmatrix}
+1&0&1\\
+\end{pmatrix}^{\mathrm{T}}
 \begin{pmatrix}
 x_1\\
 x_2\\
@@ -59,4 +59,4 @@ x_3\\
 6k_3+4\\
 \end{pmatrix}$$
 
-
+得出x_1,x_2,x_3关于k_1,k_2,k_3的表达式，再取整数。得出最优解（总步数最小）。
