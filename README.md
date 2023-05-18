@@ -3,7 +3,7 @@
 
 ---------------------
 
-用法：
+## 用法：
 
  <img src="https://github.com/dreamingwill/StarRail_CompassSolution/blob/main/compass.jpg" alt="compass" width="300"/>
  
@@ -32,7 +32,9 @@ x2 = 0  (内中外)对应控制: 1 1 0
 x3 = 2  (内中外)对应控制: 1 0 1
 
 
-解法：
+
+
+## 解法：
 
 解方程：
 
